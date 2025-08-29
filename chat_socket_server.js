@@ -20,7 +20,7 @@ const io = socketIo(server, {
 
 // MySQL bağlantı bilgileri için yer tutucular
 const dbConfig = {
-    host: process.env.DB_HOST || 'localhost:3306',
+    host: process.env.DB_HOST || '152.89.92.51',
     user: process.env.DB_USER || 'u552787900_QEd6i', // BURAYI DEĞİŞTİRİN
     password: process.env.DB_PASSWORD || '0a68670eA/*-', // BURAYI DEĞİŞTİRİN
     database: process.env.DB_DATABASE || 'u552787900_t1AQ5' // BURAYI DEĞİŞTİRİN
