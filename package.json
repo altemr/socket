@@ -1,0 +1,32 @@
+{
+  "name": "askivatan-chat-socket",
+  "version": "1.0.0",
+  "description": "Socket.IO Chat Server for Askivatan",
+  "main": "server.js",
+  "scripts": {
+    "start": "node chat_socket_server.js",
+    "dev": "nodemon server.js",
+    "pm2": "pm2 start server.js --name httpdocs-chat-socket",
+    "pm2-prod": "pm2 start server.js --name httpdocs-chat-socket --env production",
+    "start-chat": "node chat_socket_server.js",
+    "start-httpdocs": "node server.js",
+    "quick": "echo 'HTTPdocs Chat Server baslatiliyor...' && node server.js",
+    "prod": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "mysql2": "^3.6.0",
+    "cors": "^2.8.5",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": ["socket.io", "chat", "real-time", "askivatan"],
+  "author": "Askivatan Team",
+  "license": "MIT"
+}
